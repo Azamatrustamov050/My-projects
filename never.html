@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing foods</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'images/mystyle.css')}}">
+    
+<body style="background-color: #3d4546;">
+    <img src="{{url_for('static',filename='images/hh.jpg')}}"/>
+    <img style="margin-left: 40px;" src="{{url_for('static',filename='images/hamburger.jpg')}}"/>
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/hamburger2.jpg')}}">
+    <p style="font-size: 30px; background-color: springgreen;border:5px solid #074e07; border-radius: 20px;">Hamburger!</p>
+    <img src="{{url_for('static',filename='images/chesburger.jpg')}}"/>
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/cheeseburger2.jpg')}}">
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/cheeseburger3.jpg')}}"><br>
+    <p style="font-size: 30px; background-color: red;border:5px solid #240804;border-radius: 20px;">Cheeseburger!</p>
+    <img src="{{url_for('static',filename='images/pp.jpg')}}"/>
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/pizza2.jpg')}}">
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/pizza3.jpg')}}"><br>
+    <p style="font-size: 30px; background-color: aquamarine; border:5px solid #0e6464; border-radius: 20px;">Pizza!</p>
+    <img src="{{url_for('static',filename='images/hot_dogs.jpg')}}"/>
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/hot dogs2.jpg')}}">
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/hot dogs3.jpg')}}"><br>
+    <p style="font-size: 30px; background-color: yellow; border:5px solid yellowgreen; border-radius: 20px;">Hot Dogs!</p>
+    <img src="{{url_for('static',filename='images/barbecue_ribs.jpg')}}"/>
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/barbecue1.jpg')}}">
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/barbecue2.jpg')}}"><br>
+    <p style="font-size: 30px; background-color: blue; border: 5px solid #090942; border-radius: 20px;">Barbecue Ribs!</p>
+    <img src="{{url_for('static', filename = 'images/macaroni_and_cheese3.jpg')}}">
+    <img style="margin-left: 40px;" src="{{url_for('static',filename='images/macaroni_and_cheese.jpg')}}"/>
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/macaroni_and_cheese2.jpg')}}"><br>
+    <p style="font-size: 30px; background-color: purple;border: 5px solid #360236; border-radius: 20px;">Macaroni & Cheese!</p>
+    <img src="{{url_for('static',filename='images/buffalochickenwings.jpg')}}"/>
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/chicken.jpg')}}">
+    <img style="margin-left: 40px;" src="{{url_for('static', filename = 'images/chicken2.jpg')}}">
+    <p style="font-size: 30px; background-color: #13b8c4; border:5px solid dodgerblue; border-radius: 20px;">Buffalo Chicken Wings!</p>
+    <img src="{{url_for('static',filename='images/apple_pie1.jpg')}}"/>
+    <img style="margin-left: 40px;" src="{{url_for('static',filename='images/apple pie1.jpg')}}"/>
+    <img style="margin-left: 40px;" src="{{url_for('static',filename='images/apple pie2.jpg')}}"/><br>
+    <p style="font-size: 30px; background-color: chocolate; border: 5px solid tomato;border-radius:  20px;">Apple Pie!</p>
+
+    <style>
+            img{
+        width: 30%;
+        border-radius: 100px;
+        margin-top: 15px;
+      }
+    </style>
+    <a href="https://www.realsimple.com/"><button style="background-color:#af3131 ;border-radius: 20px; padding: 5px 40px;color: #20006f;border: 5px solid tomato;font-style: italic;">Foods!</button></a>
+    <style>
+    </style>
+    <h1 style="font-size: 50px; text-decoration: underline;font-style: italic;">Delicious foods!</h1>
+    <p style="color :crimson;font-family: verdana; font-size: 50px;border: 7px solid black; border-radius: 35px;background-color: white;">Hello Dear  customers! Welcome to our foods channel! Here, you can order any kind of food you want!</p>
+  </body>
+<body>
+    <div class="container">
+    <form action="http://localhost:5000/contact" method="POST">
+  
+      <label for="fname;" style="color: white;">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <label for="lname" style="color: white;">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="region;" style="color:white;">Region</label>
+      <select id="region" name="region">
+        <option value="new meico">New mexico</option>
+        <option value="new jersey">New Jersey</option>
+        <option value="new york">New York</option>
+        <option value="california">California</option>
+        <option value="las vegas">Las vegas</option>
+        <option value="kentucky">Kentucky</option>
+        <option value="ohio">Ohio</option>
+        <option value="oklahoma">Oklahoma</option>
+        <option value="mississipi">Mississipi</option>
+        <option value="washiton">Washington</option>
+        <option value="florida">Florida</option>
+      </select>
+      <label for="email;" style="color:white;">Email</label>
+      <input type="text" id="email" name = "email" placeholder="@Email">
+  
+      <label for="food;" style="color:white;">Type of food</label>
+      <select name="food" id="food" placeholder="Choose your food from here" style="height: 60px;">
+        <option value="hamburger">Hamburger</option>
+        <option value="cheeseburger">Cheeseburger</option>
+        <option value="pizza">Pizza</option>
+        <option value="hot dogs">Hot Dogs</option>
+        <option value="barbecue ribs">Barbecue Ribs</option>
+        <option value="macaroni and cheese">Macaroni and Cheese</option>
+        <option value="buffalo chicken wings">Buffalo Chicken Wings</option>
+        <option value="apple pie">Apple Pie</option>
+      </select>
+    <input type="submit" value="submit">
+
+        </form>
+
+      </div>
+  
+    </form>
+  </div>
+</body>
+</html>
+<a href="#" style="color:#2e1794;font-size: 20px;">Jump to top!</a>
+
